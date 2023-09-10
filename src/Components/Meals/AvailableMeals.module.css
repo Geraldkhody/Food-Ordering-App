@@ -1,0 +1,27 @@
+.meals {
+    max-width: 60rem;
+    width: 90%;
+    margin: 2rem auto;
+    animation: meal-appear 1s ease-in forwards;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 900;
+    font-size: larger;
+}
+
+
+@keyframes meal-appear {
+    from {
+        transform: translateY(3rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
